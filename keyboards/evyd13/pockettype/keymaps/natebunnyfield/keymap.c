@@ -176,75 +176,75 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT_ortho_4x12(
-  TR_A,   TR_Db,  TR_F,   MI_F5,  MI_B4,  MI_F4,  MI_B3,  MI_F3,  MI_B2,  MI_F2,  MI_B1,  MI_F1,
-  TR_D,   TR_Gb,  TR_Bb,  MI_E5,  MI_A4,  MI_E4,  MI_A3,  MI_E3,  MI_A2,  MI_E2,  MI_A1,  MI_E1,
-  TR_G,   TR_B,   TR_Eb,  MI_D5,  MI_Gs4, MI_D4,  MI_Gs3, MI_D3,  MI_Gs2, MI_D2,  MI_Gs1, MI_D1,
-  TR_C,   TR_E,   TR_Ab,  MI_C5,  MI_G4,  MI_C4,  MI_G3,  MI_C3,  MI_G2,  MI_C2,  MI_G1,  MI_C1
+  TR_A,    TR_Db,   TR_F,    MI_F5,   MI_B4,   MI_F4,   MI_B3,   MI_F3,   MI_B2,   MI_F2,   MI_B1,   MI_F1,
+  TR_D,    TR_Gb,   TR_Bb,   MI_E5,   MI_A4,   MI_E4,   MI_A3,   MI_E3,   MI_A2,   MI_E2,   MI_A1,   MI_E1,
+  TR_G,    TR_B,    TR_Eb,   MI_D5,   MI_Gs4,  MI_D4,   MI_Gs3,  MI_D3,   MI_Gs2,  MI_D2,   MI_Gs1,  MI_D1,
+  TR_C,    TR_E,    TR_Ab,   MI_C5,   MI_G4,   MI_C4,   MI_G3,   MI_C3,   MI_G2,   MI_C2,   MI_G1,   MI_C1
   ),
 [1] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F4,  MI_As3, MI_Ds3, MI_Gs2, MI_Cs2, MI_Fs1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Ds4, MI_Gs3, MI_Cs3, MI_Fs2, MI_B1,  MI_F1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Cs4, MI_Fs3, MI_B2,  MI_F2,  MI_As1, MI_Ds1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_B3,  MI_F3,  MI_As2, MI_Ds2, MI_Gs1, MI_Cs1
+  _______, _______, _______, _______, _______, _______, MI_F4,   MI_As3,  MI_Ds3,  MI_Gs2,  MI_Cs2,  MI_Fs1,
+  _______, _______, _______, _______, _______, _______, MI_Ds4,  MI_Gs3,  MI_Cs3,  MI_Fs2,  MI_B1,   MI_F1,
+  _______, _______, _______, _______, _______, _______, MI_Cs4,  MI_Fs3,  MI_B2,   MI_F2,   MI_As1,  MI_Ds1,
+  _______, _______, _______, _______, _______, _______, MI_B3,   MI_F3,   MI_As2,  MI_Ds2,  MI_Gs1,  MI_Cs1
   ),
 [2] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F4,  MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_E4,  MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_D4,  MI_G3,  MI_C3,  MI_F2,  MI_B1,  MI_E1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_C4,  MI_F3,  MI_B2,  MI_E2,  MI_A1,  MI_D1
+  _______, _______, _______, _______, _______, _______, MI_F4,   MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,
+  _______, _______, _______, _______, _______, _______, MI_E4,   MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,
+  _______, _______, _______, _______, _______, _______, MI_D4,   MI_G3,   MI_C3,   MI_F2,   MI_B1,   MI_E1,
+  _______, _______, _______, _______, _______, _______, MI_C4,   MI_F3,   MI_B2,   MI_E2,   MI_A1,   MI_D1
   ),
 [3] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_G4,  MI_C4,  MI_F3,  MI_Bb2, MI_Eb2, MI_Ab1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F4,  MI_Bb3, MI_Eb3, MI_Ab2, MI_Db2, MI_Gb1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Eb4, MI_Ab3, MI_Db3, MI_Gb2, MI_C2,  MI_F1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Db4, MI_Gb3, MI_C3,  MI_F2,  MI_Bb1, MI_Eb1
+  _______, _______, _______, _______, _______, _______, MI_G4,   MI_C4,   MI_F3,   MI_Bb2,  MI_Eb2,  MI_Ab1,
+  _______, _______, _______, _______, _______, _______, MI_F4,   MI_Bb3,  MI_Eb3,  MI_Ab2,  MI_Db2,  MI_Gb1,
+  _______, _______, _______, _______, _______, _______, MI_Eb4,  MI_Ab3,  MI_Db3,  MI_Gb2,  MI_C2,   MI_F1,
+  _______, _______, _______, _______, _______, _______, MI_Db4,  MI_Gb3,  MI_C3,   MI_F2,   MI_Bb1,  MI_Eb1
   ),
 [4] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_G4,  MI_C4,  MI_F3,  MI_B2,  MI_E2,  MI_A1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F4,  MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_E4,  MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_D4,  MI_G3,  MI_C3,  MI_F2,  MI_B1,  MI_E1
+  _______, _______, _______, _______, _______, _______, MI_G4,   MI_C4,   MI_F3,   MI_B2,   MI_E2,   MI_A1,
+  _______, _______, _______, _______, _______, _______, MI_F4,   MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,
+  _______, _______, _______, _______, _______, _______, MI_E4,   MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,
+  _______, _______, _______, _______, _______, _______, MI_D4,   MI_G3,   MI_C3,   MI_F2,   MI_B1,   MI_E1
   ),
 [5] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_A4,  MI_D4,  MI_G3,  MI_C3,  MI_F2,  MI_B1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_G4,  MI_C4,  MI_F3,  MI_B2,  MI_E2,  MI_A1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F4,  MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_E4,  MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1
+  _______, _______, _______, _______, _______, _______, MI_A4,   MI_D4,   MI_G3,   MI_C3,   MI_F2,   MI_B1,
+  _______, _______, _______, _______, _______, _______, MI_G4,   MI_C4,   MI_F3,   MI_B2,   MI_E2,   MI_A1,
+  _______, _______, _______, _______, _______, _______, MI_F4,   MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,
+  _______, _______, _______, _______, _______, _______, MI_E4,   MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1
   ),
 [6] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_As4, MI_Ds4, MI_Gs3, MI_Cs3, MI_Fs2, MI_B1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Gs4, MI_Cs4, MI_Fs3, MI_B2,  MI_E2,  MI_As1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Fs4, MI_B3,  MI_E3,  MI_As2, MI_Ds2, MI_Gs1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_E4,  MI_As3, MI_Ds3, MI_Gs2, MI_Cs2, MI_Fs1
+  _______, _______, _______, _______, _______, _______, MI_As4,  MI_Ds4,  MI_Gs3,  MI_Cs3,  MI_Fs2,  MI_B1,
+  _______, _______, _______, _______, _______, _______, MI_Gs4,  MI_Cs4,  MI_Fs3,  MI_B2,   MI_E2,   MI_As1,
+  _______, _______, _______, _______, _______, _______, MI_Fs4,  MI_B3,   MI_E3,   MI_As2,  MI_Ds2,  MI_Gs1,
+  _______, _______, _______, _______, _______, _______, MI_E4,   MI_As3,  MI_Ds3,  MI_Gs2,  MI_Cs2,  MI_Fs1
   ),
 [7] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,  MI_C1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,  MI_B,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_G3,  MI_C3,  MI_F2,  MI_B1,  MI_E1,  MI_A,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_F3,  MI_B2,  MI_E2,  MI_A1,  MI_D1,  MI_G
+  _______, _______, _______, _______, _______, _______, MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,   MI_C1,
+  _______, _______, _______, _______, _______, _______, MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,   MI_B,
+  _______, _______, _______, _______, _______, _______, MI_G3,   MI_C3,   MI_F2,   MI_B1,   MI_E1,   MI_A,
+  _______, _______, _______, _______, _______, _______, MI_F3,   MI_B2,   MI_E2,   MI_A1,   MI_D1,   MI_G
   ),
 [8] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_C4,  MI_F3,  MI_Bb2, MI_Eb2, MI_Ab1, MI_Db1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Bb3, MI_Eb3, MI_Ab2, MI_Db2, MI_Gb1, MI_C1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Ab3, MI_Db3, MI_Gb2, MI_C2,  MI_F1,  MI_Bb,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Gb3, MI_C3,  MI_F2,  MI_Bb1, MI_Eb1, MI_Ab
+  _______, _______, _______, _______, _______, _______, MI_C4,   MI_F3,   MI_Bb2,  MI_Eb2,  MI_Ab1,  MI_Db1,
+  _______, _______, _______, _______, _______, _______, MI_Bb3,  MI_Eb3,  MI_Ab2,  MI_Db2,  MI_Gb1,  MI_C1,
+  _______, _______, _______, _______, _______, _______, MI_Ab3,  MI_Db3,  MI_Gb2,  MI_C2,   MI_F1,   MI_Bb,
+  _______, _______, _______, _______, _______, _______, MI_Gb3,  MI_C3,   MI_F2,   MI_Bb1,  MI_Eb1,  MI_Ab
   ),
 [9] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_C4,  MI_F3,  MI_B2,  MI_E2,  MI_A1,  MI_D1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,  MI_C1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,  MI_B,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_G3,  MI_C3,  MI_F2,  MI_B1,  MI_E1,  MI_A
+  _______, _______, _______, _______, _______, _______, MI_C4,   MI_F3,   MI_B2,   MI_E2,   MI_A1,   MI_D1,
+  _______, _______, _______, _______, _______, _______, MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,   MI_C1,
+  _______, _______, _______, _______, _______, _______, MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,   MI_B,
+  _______, _______, _______, _______, _______, _______, MI_G3,   MI_C3,   MI_F2,   MI_B1,   MI_E1,   MI_A
   ),
 [10] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_D4,  MI_G3,  MI_C3,  MI_F2,  MI_Bb1, MI_Eb1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_C4,  MI_F3,  MI_Bb2, MI_Eb2, MI_Ab1, MI_D1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_Bb3, MI_Eb3, MI_Ab2, MI_D2,  MI_G1,  MI_C1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,  MI_Bb
+  _______, _______, _______, _______, _______, _______, MI_D4,   MI_G3,   MI_C3,   MI_F2,   MI_Bb1,  MI_Eb1,
+  _______, _______, _______, _______, _______, _______, MI_C4,   MI_F3,   MI_Bb2,  MI_Eb2,  MI_Ab1,  MI_D1,
+  _______, _______, _______, _______, _______, _______, MI_Bb3,  MI_Eb3,  MI_Ab2,  MI_D2,   MI_G1,   MI_C1,
+  _______, _______, _______, _______, _______, _______, MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,   MI_Bb
   ),
 [11] = LAYOUT_ortho_4x12(
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_D4,  MI_G3,  MI_C3,  MI_F2,  MI_B1,  MI_E1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_C4,  MI_F3,  MI_B2,  MI_E2,  MI_A1,  MI_D1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_B3,  MI_E3,  MI_A2,  MI_D2,  MI_G1,  MI_C1,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MI_A3,  MI_D3,  MI_G2,  MI_C2,  MI_F1,  MI_B
+  _______, _______, _______, _______, _______, _______, MI_D4,   MI_G3,   MI_C3,   MI_F2,   MI_B1,   MI_E1,
+  _______, _______, _______, _______, _______, _______, MI_C4,   MI_F3,   MI_B2,   MI_E2,   MI_A1,   MI_D1,
+  _______, _______, _______, _______, _______, _______, MI_B3,   MI_E3,   MI_A2,   MI_D2,   MI_G1,   MI_C1,
+  _______, _______, _______, _______, _______, _______, MI_A3,   MI_D3,   MI_G2,   MI_C2,   MI_F1,   MI_B
   ),
 };
