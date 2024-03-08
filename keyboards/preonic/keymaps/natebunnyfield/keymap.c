@@ -135,7 +135,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_preonic_2x2u(
-        DF(4),   DF(5),   DF(6),   DF(7),   DF(8),   DF(9),   DF(4),   DF(3),   DF(0),   DF(0),   DF(0),   DF(0),
+        KC_BTN1, KC_BTN2, KC_BTN3, KC_BTN4, KC_VOLD, KC_VOLU, KC_MS_L, KC_MS_R, KC_MS_U, KC_MS_D, KC_WH_D, KC_WH_U,
         KC_TAB,  KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_SLSH,
         KC_LCTL, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_MINS,
         KC_LSFT, KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_ENT,
@@ -151,7 +151,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
         _______, KC_MS_L, KC_MS_R, KC_MS_U, KC_MS_D, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______,
         _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        KC_MPLY, _______, _______, _______, KC_BTN5, KC_BTN1, KC_BTN2,          KC_NO,            KC_BTN3, KC_BTN4),
+        KC_MPLY, _______, _______, _______, _______, KC_BTN1, KC_BTN2,          KC_NO,            KC_BTN3, KC_BTN4),
 	[3] = LAYOUT_preonic_2x2u(
         MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,  MI_D2,   MI_Ds2,  MI_E2,   MI_F2,   MI_Fs2,  MI_G2,   MI_Gs2,
         MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,  MI_G1,   MI_Gs1,  MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,
