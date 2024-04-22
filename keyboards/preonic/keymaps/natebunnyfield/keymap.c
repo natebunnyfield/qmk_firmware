@@ -158,15 +158,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_preonic_2x2u(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,
-        _______, _______, _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_EQL,
+        DT_UP,   DT_DOWN, DT_PRNT, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_EQL,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        KC_MPLY, _______, _______, _______, _______, KC_DEL,  KC_NO,            KC_END,           KC_PGUP, KC_PGDN),
+        _______, _______, _______, _______, _______, KC_DEL,  KC_NO,            KC_END,           KC_PGUP, KC_PGDN),
     [2] = LAYOUT_preonic_2x2u(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         TD(TD_R),KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
         _______, KC_MS_L, KC_MS_R, KC_MS_U, KC_MS_D, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______,
         _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        KC_MPLY, _______, _______, _______, KC_BTN1, KC_BTN2, KC_BTN3,          KC_NO,            KC_WH_D, KC_WH_U),
+        _______, _______, _______, _______, KC_BTN1, KC_BTN2, KC_BTN3,          KC_NO,            KC_WH_D, KC_WH_U),
 	[3] = LAYOUT_preonic_2x2u(
         MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,  MI_D2,   MI_Ds2,  MI_E2,   MI_F2,   MI_Fs2,  MI_G2,   MI_Gs2,
         MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,  MI_G1,   MI_Gs1,  MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,
