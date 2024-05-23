@@ -166,13 +166,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TD(TD_R),KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
         _______, KC_MS_L, KC_MS_R, KC_MS_U, KC_MS_D, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______,
         _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, KC_BTN1, KC_BTN2, KC_BTN3,          KC_NO,            KC_WH_D, KC_WH_U),
+        DF(3),   _______, _______, _______, KC_BTN1, KC_BTN2, KC_BTN3,          KC_NO,            KC_WH_D, KC_WH_U),
 	[3] = LAYOUT_preonic_2x2u(
         MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,  MI_D2,   MI_Ds2,  MI_E2,   MI_F2,   MI_Fs2,  MI_G2,   MI_Gs2,
         MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,  MI_G1,   MI_Gs1,  MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,
         MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,    MI_C1,   MI_Cs1,  MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,
         MI_C,    MI_Cs,   MI_D,    MI_Ds,   MI_E,    MI_F,    MI_Fs,   MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
-        DF(0),   _______, _______, _______, MI_SUST, MI_SOFT, _______,          _______,          _______, _______),
+        DF(0),   MI_VELD, MI_VELU, MI_SOFT, MI_SUST, MI_AOFF, MI_TRSD,          MI_TRSU,          MI_OCTD, MI_OCTU),
     [4] = LAYOUT_preonic_2x2u(
         MI_A,    MI_B,    MI_C1,   MI_D1,   MI_E1,   MI_F1,   MI_G1,   MI_Gs1,  MI_A1,   MI_B1,   MI_C2,   MI_D2,
         MI_G,    MI_Gs,   MI_A,    MI_B,    MI_C1,   MI_D1,   MI_E1,   MI_F1,   MI_G1,   MI_Gs1,  MI_A1,   MI_B1,
@@ -180,11 +180,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MI_C,    MI_D,    MI_E,    MI_F,    MI_G,    MI_Gs,   MI_A,    MI_B,    MI_C1,   MI_D1,   MI_E1,   MI_F1,
         DF(0),   _______, _______, _______, _______, _______, _______,          _______,          _______, _______),
 	[5] = LAYOUT_preonic_2x2u(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,          _______,          _______, _______),
+        MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,  MI_D2,   MI_Ds2,  MI_E2,   MI_F2,   MI_Fs2,  MI_G2,   MI_Gs2,
+        MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,  MI_G1,   MI_Gs1,  MI_A1,   MI_As1,  MI_B1,   MI_C2,   MI_Cs2,
+        MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,    MI_C1,   MI_Cs1,  MI_D1,   MI_Ds1,  MI_E1,   MI_F1,   MI_Fs1,
+        MI_C,    MI_Cs,   MI_D,    MI_Ds,   MI_E,    MI_F,    MI_Fs,   MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
+        DF(0),   _______, _______, _______, MI_SUST, MI_SOFT, _______,          _______,          _______, _______),
     [6] = LAYOUT_preonic_2x2u(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
