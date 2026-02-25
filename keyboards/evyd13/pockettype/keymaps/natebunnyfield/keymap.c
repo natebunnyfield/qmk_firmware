@@ -15,7 +15,7 @@
  */
 #include QMK_KEYBOARD_H
 
-// #include "process_midi.h"
+#include "process_midi.h"
 
 /*
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -93,83 +93,24 @@ enum custom_keycodes {
 };
 
 void keyboard_post_init_user(void) {
-    process_midi(MI_OC0, 0);
+    midi_config.octave = MI_OC0 - MIDI_OCTAVE_MIN;
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (!record->event.pressed) return true;
     switch (keycode) {
-    case TR_C:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TR0, record);
-        }
-        break;
-    case TR_G:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TRN5, record);
-        }
-        break;
-    case TR_D:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TR2, record);
-        }
-        break;
-    case TR_A:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TRN3, record);
-        }
-        break;
-    case TR_E:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TR4, record);
-        }
-        break;
-    case TR_B:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TRN1, record);
-        }
-        break;
-    case TR_Gb:
-        if (record->event.pressed) {
-            process_midi(MI_OCN1, record);
-            process_midi(MI_TR6, record);
-        }
-        break;
-    case TR_Db:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TR1, record);
-        }
-        break;
-    case TR_Ab:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TRN4, record);
-        }
-        break;
-    case TR_Eb:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TR3, record);
-        }
-        break;
-    case TR_Bb:
-        if (record->event.pressed) {
-            process_midi(MI_OC0, record);
-            process_midi(MI_TRN2, record);
-        }
-        break;
-    case TR_F:
-        if (record->event.pressed) {
-            process_midi(MI_OCN1, record);
-            process_midi(MI_TR5, record);
-        }
-        break;
+    case TR_C:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose =  0; break;
+    case TR_G:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose = -5; break;
+    case TR_D:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose =  2; break;
+    case TR_A:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose = -3; break;
+    case TR_E:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose =  4; break;
+    case TR_B:  midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose = -1; break;
+    case TR_Gb: midi_config.octave = MI_OCN1 - MIDI_OCTAVE_MIN; midi_config.transpose =  6; break;
+    case TR_Db: midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose =  1; break;
+    case TR_Ab: midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose = -4; break;
+    case TR_Eb: midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose =  3; break;
+    case TR_Bb: midi_config.octave = MI_OC0  - MIDI_OCTAVE_MIN; midi_config.transpose = -2; break;
+    case TR_F:  midi_config.octave = MI_OCN1 - MIDI_OCTAVE_MIN; midi_config.transpose =  5; break;
     }
     return true;
 };
