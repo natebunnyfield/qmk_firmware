@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "process_midi.h"
 
 enum {
     TD_R = 0
@@ -16,7 +17,7 @@ tap_dance_action_t tap_dance_actions[] = {
 };
 
 void keyboard_post_init_user(void) {
-    process_midi(MI_OC1, 0);
+    midi_config.octave = MI_OC1 - MIDI_OCTAVE_MIN;
 }
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
