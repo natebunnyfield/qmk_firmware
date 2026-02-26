@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "process_midi.h"
 
 enum {
     TD_R = 0
@@ -16,7 +17,7 @@ tap_dance_action_t tap_dance_actions[] = {
 };
 
 void keyboard_post_init_user(void) {
-    process_midi(MI_OC1, 0);
+    midi_config.octave = MI_OC1 - MIDI_OCTAVE_MIN;
 }
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -32,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,    _______,    _______,    _______,                KC_DEL,                             KC_NO,          KC_END,         KC_PGUP,    KC_PGDN),
 	[2] = LAYOUT(
         TD(TD_R),   KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,          KC_F9,          KC_F10,     _______,
-        _______,    KC_MS_L,    KC_MS_R,    KC_MS_U,    KC_MS_D,    KC_VOLD,    KC_VOLU,    _______,    _______,        _______,        _______,    _______,
+        _______,    MS_LEFT,    MS_RGHT,    MS_UP,      MS_DOWN,    KC_VOLD,    KC_VOLU,    _______,    _______,        _______,        _______,    _______,
         _______,    KC_F11,     KC_F12,     _______,    _______,    _______,    _______,    _______,    _______,        _______,        _______,    _______,
         DF(3),      _______,    _______,    MS_BTN1,                MS_BTN2,                            MS_BTN3,        KC_NO,          MS_WHLD,    MS_WHLU),
     [3] = LAYOUT(
@@ -44,9 +45,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (clockwise) {
-        tap_code(KC_WH_D);
+        tap_code(MS_WHLD);
     } else {
-        tap_code(KC_WH_U);
+        tap_code(MS_WHLU);
     }
     return false;
 };
