@@ -131,3 +131,9 @@ qmk flash -kb planck/rev6_drop -km natebunnyfield
 qmk flash -kb abacus -km natebunnyfield
 qmk flash -kb milk_crate -km natebunnyfield
 ```
+
+---
+
+### Keyboardio Preonic (not QMK)
+
+Second Preonic, Keyboardio-made, runs Kaleidoscope, so nothing in this repo builds for it. Keymap is edited live over Focus. Backups, decoder and recipe: [`keyboardio-preonic/`](keyboardio-preonic/README.md).
