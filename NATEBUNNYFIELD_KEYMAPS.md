@@ -76,9 +76,9 @@ One row shorter than the Preonic. Identical layer structure to the Abacus but wi
 
 | Layer | Description |
 |-------|-------------|
-| 0 | **Dvorak.** Media play, `LT(1,←)` / `LT(2,→)`. |
-| 1 | **Symbols/Numbers.** Digits, brackets, tap-tempo, media prev. |
-| 2 | **Functions/Mouse.** F1–F12, mouse, brightness, media. `TD(TD_R)` safe reset. `DF(3)` to MIDI. |
+| 0 | **Dvorak.** Left click (where play was), `LT(1,←)` / `LT(2,→)`. |
+| 1 | **Symbols/Numbers.** Digits, brackets, tap-tempo, right click (where prev was). |
+| 2 | **Functions/Mouse.** F1–F12, mouse, brightness, volume, middle click (where next was). `TD(TD_R)` safe reset. `DF(3)` to MIDI. |
 | 3 | **MIDI Chromatic** (36 notes, C to Cs2). Bottom row: `DF(0)`, velocity, soft, sustain, all-notes-off, transpose ±, octave ±. |
 
 ---
